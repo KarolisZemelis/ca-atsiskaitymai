@@ -1,9 +1,13 @@
+html {
+  overflow: hidden;
+}
+
 body {
   width: 428px;
   background-color: #ffffff;
   margin: 0 auto;
-  padding: 0px;
   font-family: "Inter";
+  overflow: hidden;
   border: solid 2px orange;
 }
 
@@ -68,8 +72,9 @@ header div nav div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -141,10 +146,46 @@ header div nav div {
   color: #111111;
 }
 
-.hero img {
+.hero .alienImage {
   width: 175.69px;
   height: 278px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  position: relative;
+  width: 189.62px;
+  height: 278px;
+  left: 12px;
+  top: -300px;
+}
+
+.hero .elipse1 {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  left: -160px;
+  top: 160px;
+}
+
+.hero .elipse2 {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  left: -160px;
+  top: 40px;
+}
+
+.upsell {
+  width: 428px;
+  height: 326px;
+  margin-top: 80.72px;
+  background-image: url(images/background.png);
+}
+
+.upsell div {
+  padding: 122px 32px 32px 32px;
+}
+
+.upsell div h1 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
 }
 /*# sourceMappingURL=style.css.map */

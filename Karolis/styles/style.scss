@@ -1,11 +1,13 @@
 //GENERAL PROPERTIES
-
+html{
+    overflow: hidden;
+}
 body {
   width: 428px;
   background-color: #ffffff;
   margin: 0 auto;
-  padding: 0px;
   font-family: "Inter";
+  overflow: hidden;
   //Delete below
   border: solid 2px orange;
 }
@@ -51,7 +53,7 @@ header {
   width: 482.62px;
   height: 448px;
   margin-left: 32px;
-  @include d-flex(center, space-around, row);
+  @include d-flex(center, space-between, row);
   div {
     padding-left: 0;
     h4 {
@@ -100,11 +102,43 @@ header {
     }
   }
   //RIGHT IMAGE
-  img {
+  .alienImage {
     width: 175.69px;
     height: 278px;
-    align-self: flex-start;
+    position: relative;
+    width: 189.62px;
+    height: 278px;
+    left: 12px;
+    top: -300px;
+  }
+  .elipse1 {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    left: -160px;
+    top: 160px;
+  }
+  .elipse2 {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    left: -160px;
+    top: 40px;
   }
 }
 
-//
+//UPSELL
+.upsell {
+  width: 428px;
+  height: 326px;
+  margin-top: 80.72px;
+  background-image: url(images/background.png);
+  div {
+    padding: 122px 32px 32px 32px;
+    h1 {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+}
