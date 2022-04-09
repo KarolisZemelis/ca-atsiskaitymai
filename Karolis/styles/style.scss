@@ -1,10 +1,8 @@
 //GENERAL PROPERTIES
 html {
-
-.overflow{
-  overflow: hidden;
-}  
-
+  .overflow {
+    overflow: hidden;
+  }
 }
 body {
   width: 428px;
@@ -52,7 +50,7 @@ header {
 
 //HERO
 //LEFT TEXT
- //RIGHT IMAGE
+//RIGHT IMAGE
 .hero {
   width: 100%;
   height: 448px;
@@ -150,6 +148,38 @@ header {
       font-weight: 400;
       font-size: 20px;
       line-height: 150%;
+    }
+  }
+}
+
+//PRESS
+.press {
+  width: 22.75rem;
+  height: 7.3125rem;
+  padding: 4rem 2rem 3.5rem 2rem;
+  border: 1px solid black;
+  div {
+    @include d-flex(center,space-between,row );
+    flex: 1;
+    flex-wrap: wrap;
+    .row1{
+      padding-bottom: 1.7219rem;
+    }
+    .boom {
+      width: 13rem;
+      height: 2.5288rem;
+    }
+    .blimp {
+      width: 9.625rem;
+      height: 2.8869rem;
+    }
+    .qrco {
+      width: 8.295rem;
+      height: 2.8719rem;
+    }
+    .drop {
+      width: 9.7575rem;
+      height: 2.5294rem;
     }
   }
 }
