@@ -1,1 +1,58 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  width: 428px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  border: solid 2px orange;
+}
+
+header {
+  width: 364px;
+  height: 36px;
+  margin: 32px;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header div img {
+  width: 198px;
+  height: 36px;
+}
+
+header div nav {
+  width: 24px;
+  height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header div nav div {
+  width: 24px;
+  height: 4px;
+  background-color: #999999;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=style.css.map */

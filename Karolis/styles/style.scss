@@ -1,0 +1,51 @@
+//GENERAL PROPERTIES
+
+body{
+    width: 428px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    //Delete below
+    border: solid 2px orange;
+}
+
+@mixin d-flex ($align , $justify , $direction){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+
+//HEADER
+//NAVBAR
+header{
+    width: 364px;
+    height: 36px;
+    margin: 32px;
+    div{
+        @include d-flex(center, space-between, row);
+        img{
+            width: 198px;
+            height: 36px;
+            // margin-left: 32px;
+            // margin-top: 32px;
+        }
+        nav{
+            width: 24px;
+            height: 22px;
+            @include d-flex(center, space-around, column);
+            div{
+                width: 24px;
+                height: 4px;
+                background-color: #999999;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+//HERO
+//LEFT TEXT
+.hero{
+    
+} 
