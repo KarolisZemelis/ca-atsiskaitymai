@@ -1,13 +1,16 @@
 //GENERAL PROPERTIES
-html{
-    overflow: hidden;
+html {
+
+.overflow{
+  overflow: hidden;
+}  
+
 }
 body {
   width: 428px;
   background-color: #ffffff;
   margin: 0 auto;
   font-family: "Inter";
-  overflow: hidden;
   //Delete below
   border: solid 2px orange;
 }
@@ -49,8 +52,9 @@ header {
 
 //HERO
 //LEFT TEXT
+ //RIGHT IMAGE
 .hero {
-  width: 482.62px;
+  width: 100%;
   height: 448px;
   margin-left: 32px;
   @include d-flex(center, space-between, row);
@@ -134,11 +138,18 @@ header {
   margin-top: 80.72px;
   background-image: url(images/background.png);
   div {
-    padding: 122px 32px 32px 32px;
+    padding: 100px 32px 32px 32px;
+
     h1 {
       font-weight: 500;
       font-size: 40px;
       line-height: 48px;
+      margin: 0;
+    }
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
     }
   }
 }
