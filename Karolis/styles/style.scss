@@ -1,51 +1,110 @@
 //GENERAL PROPERTIES
 
-body{
-    width: 428px;
-    background-color: #FFFFFF;
-    margin: 0 auto;
-    //Delete below
-    border: solid 2px orange;
+body {
+  width: 428px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 0px;
+  font-family: "Inter";
+  //Delete below
+  border: solid 2px orange;
 }
 
-@mixin d-flex ($align , $justify , $direction){
-    display: flex;
-    align-items: $align;
-    justify-content: $justify;
-    flex-direction: $direction;
+@mixin d-flex($align, $justify, $direction) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
 }
 
+$font: "Inter";
 
 //HEADER
 //NAVBAR
-header{
-    width: 364px;
-    height: 36px;
-    margin: 32px;
-    div{
-        @include d-flex(center, space-between, row);
-        img{
-            width: 198px;
-            height: 36px;
-            // margin-left: 32px;
-            // margin-top: 32px;
-        }
-        nav{
-            width: 24px;
-            height: 22px;
-            @include d-flex(center, space-around, column);
-            div{
-                width: 24px;
-                height: 4px;
-                background-color: #999999;
-                border-radius: 3px;
-            }
-        }
+header {
+  width: 364px;
+  height: 36px;
+  margin: 32px;
+  div {
+    @include d-flex(center, space-between, row);
+    img {
+      width: 198px;
+      height: 36px;
     }
+    nav {
+      width: 24px;
+      height: 22px;
+      @include d-flex(center, space-around, column);
+      div {
+        width: 24px;
+        height: 4px;
+        background-color: #999999;
+        border-radius: 3px;
+      }
+    }
+  }
 }
 
 //HERO
 //LEFT TEXT
-.hero{
-    
-} 
+.hero {
+  width: 482.62px;
+  height: 448px;
+  margin-left: 32px;
+  @include d-flex(center, space-around, row);
+  div {
+    padding-left: 0;
+    h4 {
+      width: 169.6px;
+      height: 19px;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 19.36px;
+      letter-spacing: 0.1em;
+      color: #ff3998;
+    }
+    h1 {
+      width: 274px;
+      height: 116px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 58.09px;
+      color: #111111;
+    }
+    p {
+      width: 274px;
+      height: 120px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      color: #555555;
+    }
+    .SignUpBtn {
+      width: 188px;
+      height: 75px;
+      border-radius: 4rem;
+      background-image: url(/ca-atsiskaitymai/Karolis/images/SignUpBorder.jpg);
+      @include d-flex(center, center, row);
+      a {
+        width: 76px;
+        height: 30px;
+        text-decoration: none;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        color: #111111;
+      }
+    }
+  }
+  //RIGHT IMAGE
+  img {
+    width: 175.69px;
+    height: 278px;
+    align-self: flex-start;
+  }
+}
+
+//

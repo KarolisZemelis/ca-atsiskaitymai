@@ -1,7 +1,9 @@
 body {
   width: 428px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 0 auto;
+  padding: 0px;
+  font-family: "Inter";
   border: solid 2px orange;
 }
 
@@ -54,5 +56,95 @@ header div nav div {
   height: 4px;
   background-color: #999999;
   border-radius: 3px;
+}
+
+.hero {
+  width: 482.62px;
+  height: 448px;
+  margin-left: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hero div {
+  padding-left: 0;
+}
+
+.hero div h4 {
+  width: 169.6px;
+  height: 19px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 19.36px;
+  letter-spacing: 0.1em;
+  color: #ff3998;
+}
+
+.hero div h1 {
+  width: 274px;
+  height: 116px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58.09px;
+  color: #111111;
+}
+
+.hero div p {
+  width: 274px;
+  height: 120px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #555555;
+}
+
+.hero div .SignUpBtn {
+  width: 188px;
+  height: 75px;
+  border-radius: 4rem;
+  background-image: url(/ca-atsiskaitymai/Karolis/images/SignUpBorder.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hero div .SignUpBtn a {
+  width: 76px;
+  height: 30px;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #111111;
+}
+
+.hero img {
+  width: 175.69px;
+  height: 278px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 /*# sourceMappingURL=style.css.map */
