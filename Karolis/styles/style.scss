@@ -6,7 +6,7 @@
 
 body {
   width: 26.75rem;
-  // height: auto;
+  border-radius: 1rem;
   background-color: #ffffff;
   margin: 0 auto;
   font-family: "Inter";
@@ -368,7 +368,7 @@ header {
     height: 467px;
     position: relative;
     top: 67px;
-    left: -43px;
+    left: -42px;
     // width: 206px;
     // height: 467px;
     // position: relative;
@@ -376,6 +376,55 @@ header {
     // height: 17.375rem;
     // left: -2em;
     // top: 20rem;
+  }
+}
+
+//FOOTER
+.footer {
+  .container {
+    padding: 0 163px 105px 32px;
+    margin: 0;
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 100%;
+    }
+    .SocialMedia {
+      @include d-flex(center, space-between, row);
+      width: 118px;
+    }
+    .footerLinksContainer {
+      .footerLinks {
+        @include d-flex(flex-start, space-between, row);
+        width: 260px;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          div {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.1em;
+            padding-bottom: 28px;
+          }
+          li {
+            padding-bottom: 8px;
+            a {
+              text-decoration: none;
+              color: #555555;
+            }
+          }
+        }
+      }
+    }
+    .copyright {
+      width:268px;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 100%;
+      color: #999999;
+    }
   }
 }
 

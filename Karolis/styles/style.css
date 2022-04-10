@@ -4,6 +4,7 @@
 
 body {
   width: 26.75rem;
+  border-radius: 1rem;
   background-color: #ffffff;
   margin: 0 auto;
   font-family: "Inter";
@@ -521,6 +522,81 @@ header div nav div {
   height: 467px;
   position: relative;
   top: 67px;
-  left: -43px;
+  left: -42px;
+}
+
+.footer .container {
+  padding: 0 163px 105px 32px;
+  margin: 0;
+}
+
+.footer .container p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.footer .container .SocialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 118px;
+}
+
+.footer .container .footerLinksContainer .footerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 260px;
+}
+
+.footer .container .footerLinksContainer .footerLinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .container .footerLinksContainer .footerLinks ul div {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  padding-bottom: 28px;
+}
+
+.footer .container .footerLinksContainer .footerLinks ul li {
+  padding-bottom: 8px;
+}
+
+.footer .container .footerLinksContainer .footerLinks ul li a {
+  text-decoration: none;
+  color: #555555;
+}
+
+.footer .container .copyright {
+  width: 268px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+  color: #999999;
 }
 /*# sourceMappingURL=style.css.map */
