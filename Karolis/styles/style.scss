@@ -1,11 +1,12 @@
 //GENERAL PROPERTIES
-html {
-  .overflow {
-    overflow: hidden;
-  }
+
+.overflow {
+  overflow: hidden;
 }
+
 body {
   width: 26.75rem;
+  height: auto;
   background-color: #ffffff;
   margin: 0 auto;
   font-family: "Inter";
@@ -186,29 +187,107 @@ header {
 //SHOWCASE
 .showcase {
   width: 22.75rem;
-  height: 12.625rem;
-  margin: 0%;
-  div {
+  margin: 0rem 2rem 0rem 2rem;
+  .showcaseText {
     width: 100%;
     height: 100%;
-    margin: 0rem 2rem 0rem 2rem;
     h1 {
       font-weight: 500;
       font-size: 2.5rem;
       line-height: 3rem;
+      margin: 0;
+      padding-bottom: 1rem;
     }
     p {
       font-weight: 400;
       font-size: 1.25rem;
       line-height: 150%;
-      color:#555555;
+      color: #555555;
       text-align: justify;
+      margin: 0;
+      padding-bottom: 2.5rem;
     }
 
-    span{
+    span {
       color: inherit;
-      a{
-        color:inherit;
+      a {
+        color: inherit;
+      }
+    }
+  }
+  .cardBox {
+    @include d-flex(flex-end,flex-start,row);
+
+    .card {
+      width: 18.125rem;
+      height: 25rem;
+      background-color: #eeeeee;
+      border-radius: 1rem;
+      margin: 40px 40px 92px 32px;
+
+      .imgcard {
+        width: 18.125rem;
+        height: 17.375rem;
+      }
+      .cardTable {
+        @include d-flex(center, space-between, row);
+        padding: 1.5rem 1.4375rem 1.5rem 1.5rem;
+
+        .cardTableLeft {
+          @include d-flex(flex-start, center, column);
+          gap: 0.75rem;
+          .tier1Left {
+            width: 5.375rem;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #ff8139;
+          }
+          .name {
+            width: 6.8125rem;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 100%;
+            color: #111111;
+          }
+          .nftNr {
+            width: 4.0625rem;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            color: #777777;
+          }
+        }
+        .cardTableRight {
+          @include d-flex(flex-end, center, column);
+          gap: 0.75rem;
+          .tier1Right {
+            width: 3rem;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 100%;
+            color: #777777;
+          }
+          .price {
+            width: 100px;
+            font-weight: 500;
+            font-size: 1.1875rem;
+            line-height: 100%;
+            color: #111111;
+            .ethLogo {
+              width: 0.8125rem;
+              height: 1.375rem;
+            }
+          }
+          .timeLeft {
+            width: 4.875rem;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 100%;
+            color: #777777;
+          }
+        }
       }
     }
   }
