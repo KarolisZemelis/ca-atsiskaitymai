@@ -3,417 +3,377 @@
 }
 
 body {
-  width: 26.75rem;
-  height: auto;
   background-color: #ffffff;
   margin: 0 auto;
   font-family: "Inter";
   border: solid 0.125rem orange;
 }
 
-header {
-  width: 22.75rem;
-  height: 2.25rem;
-  margin: 2rem;
-}
-
-header div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-header div img {
-  width: 12.375rem;
-  height: 2.25rem;
-}
-
-header div nav {
-  width: 1.5rem;
-  height: 1.375rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-header div nav div {
-  width: 1.5rem;
-  height: 0.25rem;
-  background-color: #999999;
-  border-radius: 0.1875rem;
-}
-
-.hero {
-  width: 100%;
-  height: 28rem;
-  margin-left: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.hero div {
-  padding-left: 0;
-}
-
-.hero div h4 {
-  width: 10.6rem;
-  height: 1.1875rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1.21rem;
-  letter-spacing: 0.1em;
-  color: #ff3998;
-}
-
-.hero div h1 {
-  width: 17.125rem;
-  height: 7.25rem;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 3rem;
-  line-height: 3.6306rem;
-  color: #111111;
-}
-
-.hero div p {
-  width: 17.125rem;
-  height: 7.5rem;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 150%;
-  color: #555555;
-}
-
-.hero div .SignUpBtn {
-  width: 11.75rem;
-  height: 4.6875rem;
-  border-radius: 64px;
-  background-image: url(/ca-atsiskaitymai/Karolis/images/SignUpBorder.jpg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.hero div .SignUpBtn a {
-  width: 4.75rem;
-  height: 1.875rem;
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 150%;
-  color: #111111;
-}
-
-.hero .alienImage {
-  width: 10.9806rem;
-  height: 17.375rem;
-  position: relative;
-  width: 11.8513rem;
-  height: 17.375rem;
-  left: 0.75rem;
-  top: -18.75rem;
-}
-
-.hero .elipse1 {
-  width: 18.75rem;
-  height: 12.5rem;
-  position: relative;
-  left: -10rem;
-  top: 10rem;
-}
-
-.hero .elipse2 {
-  width: 18.75rem;
-  height: 12.5rem;
-  position: relative;
-  left: -10rem;
-  top: 2.5rem;
-}
-
-.upsell {
-  width: 26.75rem;
-  height: 20.375rem;
-  margin-top: 5.045rem;
-  background-image: url(images/background.png);
-}
-
-.upsell div {
-  padding: 6.25rem 2rem 2rem 2rem;
-}
-
-.upsell div h1 {
-  font-weight: 500;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  margin: 0;
-}
-
-.upsell div p {
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 150%;
-}
-
-.press {
-  width: 364px;
-  height: 117px;
-  padding: 64px 32px 56px 32px;
-}
-
-.press div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.press div .row1 {
-  padding-bottom: 27.5504px;
-}
-
-.press div .boom {
-  width: 208px;
-  height: 40.4608px;
-}
-
-.press div .blimp {
-  width: 154px;
-  height: 46.1904px;
-}
-
-.press div .qrco {
-  width: 132.72px;
-  height: 45.9504px;
-}
-
-.press div .drop {
-  width: 156.12px;
-  height: 40.4704px;
-}
-
-.showcase {
-  width: 22.75rem;
-  margin: 0rem 2rem 0rem 2rem;
-}
-
-.showcase .showcaseText {
-  width: 100%;
-  height: 100%;
-}
-
-.showcase .showcaseText h1 {
-  font-weight: 500;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  margin: 0;
-  padding-bottom: 1rem;
-}
-
-.showcase .showcaseText p {
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 150%;
-  color: #555555;
-  text-align: justify;
-  margin: 0;
-  padding-bottom: 2.5rem;
-}
-
-.showcase .showcaseText span {
-  color: inherit;
-}
-
-.showcase .showcaseText span a {
-  color: inherit;
-}
-
-.showcase .cardBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.showcase .cardBox .card {
-  width: 18.125rem;
-  height: 25rem;
-  background-color: #eeeeee;
-  border-radius: 1rem;
-  margin: 40px 40px 92px 32px;
-}
-
-.showcase .cardBox .card .imgcard {
-  width: 18.125rem;
-  height: 17.375rem;
-}
-
-.showcase .cardBox .card .cardTable {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 1.5rem 1.4375rem 1.5rem 1.5rem;
-}
-
-.showcase .cardBox .card .cardTable .cardTableLeft {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 0.75rem;
-}
-
-.showcase .cardBox .card .cardTable .cardTableLeft .tier1Left {
-  width: 5.375rem;
-  font-weight: 500;
-  font-size: 0.75rem;
-  line-height: 100%;
-  text-transform: uppercase;
-  color: #ff8139;
-}
-
-.showcase .cardBox .card .cardTable .cardTableLeft .name {
-  width: 6.8125rem;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 100%;
-  color: #111111;
-}
-
-.showcase .cardBox .card .cardTable .cardTableLeft .nftNr {
-  width: 4.0625rem;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
-  color: #777777;
-}
-
-.showcase .cardBox .card .cardTable .cardTableRight {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 0.75rem;
-}
-
-.showcase .cardBox .card .cardTable .cardTableRight .tier1Right {
-  width: 3rem;
-  font-weight: 500;
-  font-size: 0.75rem;
-  line-height: 100%;
-  color: #777777;
-}
-
-.showcase .cardBox .card .cardTable .cardTableRight .price {
-  width: 100px;
-  font-weight: 500;
-  font-size: 1.1875rem;
-  line-height: 100%;
-  color: #111111;
-}
-
-.showcase .cardBox .card .cardTable .cardTableRight .price .ethLogo {
-  width: 0.8125rem;
-  height: 1.375rem;
-}
-
-.showcase .cardBox .card .cardTable .cardTableRight .timeLeft {
-  width: 4.875rem;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 100%;
-  color: #777777;
+@media screen and (max-width: 480px) {
+  body {
+    width: 26.75rem;
+    height: auto;
+  }
+  header {
+    width: 22.75rem;
+    height: 2.25rem;
+    margin: 2rem;
+  }
+  header div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header div img {
+    width: 12.375rem;
+    height: 2.25rem;
+  }
+  header div nav {
+    width: 1.5rem;
+    height: 1.375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header div nav div {
+    width: 1.5rem;
+    height: 0.25rem;
+    background-color: #999999;
+    border-radius: 0.1875rem;
+  }
+  .hero {
+    width: 100%;
+    height: 28rem;
+    margin-left: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hero div {
+    padding-left: 0;
+  }
+  .hero div h4 {
+    width: 10.6rem;
+    height: 1.1875rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.21rem;
+    letter-spacing: 0.1em;
+    color: #ff3998;
+  }
+  .hero div h1 {
+    width: 17.125rem;
+    height: 7.25rem;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 3.6306rem;
+    color: #111111;
+  }
+  .hero div p {
+    width: 17.125rem;
+    height: 7.5rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 150%;
+    color: #555555;
+  }
+  .hero div .SignUpBtn {
+    width: 11.75rem;
+    height: 4.6875rem;
+    border-radius: 64px;
+    background-image: url(/ca-atsiskaitymai/Karolis/images/SignUpBorder.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hero div .SignUpBtn a {
+    width: 4.75rem;
+    height: 1.875rem;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 150%;
+    color: #111111;
+  }
+  .hero .alienImage {
+    width: 10.9806rem;
+    height: 17.375rem;
+    position: relative;
+    width: 11.8513rem;
+    height: 17.375rem;
+    left: 0.75rem;
+    top: -18.75rem;
+  }
+  .hero .elipse1 {
+    width: 18.75rem;
+    height: 12.5rem;
+    position: relative;
+    left: -10rem;
+    top: 10rem;
+  }
+  .hero .elipse2 {
+    width: 18.75rem;
+    height: 12.5rem;
+    position: relative;
+    left: -10rem;
+    top: 2.5rem;
+  }
+  .upsell {
+    width: 26.75rem;
+    height: 20.375rem;
+    margin-top: 5.045rem;
+    background-image: url(images/background.png);
+  }
+  .upsell div {
+    padding: 6.25rem 2rem 2rem 2rem;
+  }
+  .upsell div h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0;
+  }
+  .upsell div p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 150%;
+  }
+  .press {
+    width: 364px;
+    height: 117px;
+    padding: 64px 32px 56px 32px;
+  }
+  .press div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .press div .row1 {
+    padding-bottom: 27.5504px;
+  }
+  .press div .boom {
+    width: 208px;
+    height: 40.4608px;
+  }
+  .press div .blimp {
+    width: 154px;
+    height: 46.1904px;
+  }
+  .press div .qrco {
+    width: 132.72px;
+    height: 45.9504px;
+  }
+  .press div .drop {
+    width: 156.12px;
+    height: 40.4704px;
+  }
+  .showcase {
+    width: 22.75rem;
+    margin: 0rem 2rem 0rem 2rem;
+  }
+  .showcase .showcaseText {
+    width: 100%;
+    height: 100%;
+  }
+  .showcase .showcaseText h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  .showcase .showcaseText p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 150%;
+    color: #555555;
+    text-align: justify;
+    margin: 0;
+    padding-bottom: 2.5rem;
+  }
+  .showcase .showcaseText span {
+    color: inherit;
+  }
+  .showcase .showcaseText span a {
+    color: inherit;
+  }
+  .showcase .cardBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .showcase .cardBox .card {
+    width: 18.125rem;
+    height: 25rem;
+    background-color: #eeeeee;
+    border-radius: 1rem;
+    margin: 40px 40px 92px 32px;
+  }
+  .showcase .cardBox .card .imgcard {
+    width: 18.125rem;
+    height: 17.375rem;
+  }
+  .showcase .cardBox .card .cardTable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1.5rem 1.4375rem 1.5rem 1.5rem;
+  }
+  .showcase .cardBox .card .cardTable .cardTableLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.75rem;
+  }
+  .showcase .cardBox .card .cardTable .cardTableLeft .tier1Left {
+    width: 5.375rem;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #ff8139;
+  }
+  .showcase .cardBox .card .cardTable .cardTableLeft .name {
+    width: 6.8125rem;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #111111;
+  }
+  .showcase .cardBox .card .cardTable .cardTableLeft .nftNr {
+    width: 4.0625rem;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #777777;
+  }
+  .showcase .cardBox .card .cardTable .cardTableRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.75rem;
+  }
+  .showcase .cardBox .card .cardTable .cardTableRight .tier1Right {
+    width: 3rem;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 100%;
+    color: #777777;
+  }
+  .showcase .cardBox .card .cardTable .cardTableRight .price {
+    width: 100px;
+    font-weight: 500;
+    font-size: 1.1875rem;
+    line-height: 100%;
+    color: #111111;
+  }
+  .showcase .cardBox .card .cardTable .cardTableRight .price .ethLogo {
+    width: 0.8125rem;
+    height: 1.375rem;
+  }
+  .showcase .cardBox .card .cardTable .cardTableRight .timeLeft {
+    width: 4.875rem;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 100%;
+    color: #777777;
+  }
 }
 /*# sourceMappingURL=style.css.map */
