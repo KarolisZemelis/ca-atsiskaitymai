@@ -158,23 +158,30 @@ header .headerFlex .menuFull {
   width: 11.8513rem;
   height: 17.375rem;
   left: 0.75rem;
-  top: -18.75rem;
+  top: -13.75rem;
 }
 
 .hero .elipse1 {
-  width: 18.75rem;
-  height: 12.5rem;
+  width: 166.86px;
+  height: 166.86px;
+  background: #ff3998;
+  -webkit-filter: blur(110.737px);
+          filter: blur(110.737px);
   position: relative;
-  left: -10rem;
-  top: 10rem;
+  top: 8rem;
+  left: 4rem;
 }
 
 .hero .elipse2 {
-  width: 18.75rem;
-  height: 12.5rem;
+  width: 116.05px;
+  height: 116.05px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff8139), to(#ff8139)), #ff8139;
+  background: linear-gradient(0deg, #ff8139, #ff8139), #ff8139;
+  -webkit-filter: blur(110.737px);
+          filter: blur(110.737px);
   position: relative;
-  left: -10rem;
-  top: 2.5rem;
+  top: 4rem;
+  left: 4rem;
 }
 
 .upsell {
@@ -182,6 +189,8 @@ header .headerFlex .menuFull {
   height: 20.375rem;
   margin-top: 5.045rem;
   background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .upsell div {
@@ -207,7 +216,7 @@ header .headerFlex .menuFull {
   padding: 64px 32px 56px 32px;
 }
 
-.press div {
+.press .row1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,28 +235,31 @@ header .headerFlex .menuFull {
           flex: 1;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.press div .row1 {
   padding-bottom: 27.5504px;
 }
 
-.press div .boom {
+.press .row1 .booms {
   width: 208px;
   height: 40.4608px;
 }
 
-.press div .blimp {
+.press .row1 .fullScreen {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.press .row1 .blimp {
   width: 154px;
   height: 46.1904px;
 }
 
-.press div .qrco {
+.press .row1 .qrco {
   width: 132.72px;
   height: 45.9504px;
 }
 
-.press div .drop {
+.press .row1 .drop {
   width: 156.12px;
   height: 40.4704px;
 }
@@ -608,15 +620,16 @@ header .headerFlex .menuFull {
 @media screen and (min-width: 480px) {
   body {
     width: 1280px;
-    padding: 70px 80px 0px 90px;
+    padding: 70px 80px 0px 80px;
     margin: 0 auto;
   }
-  body .alienImage {
-    display: none;
+  body .overflow {
+    overflow: visible;
   }
   body header {
     width: 100%;
     margin: 0%;
+    padding-bottom: 205px;
   }
   body header .headerFlex {
     width: 100%;
@@ -659,7 +672,121 @@ header .headerFlex .menuFull {
     color: #555555;
   }
   body header .headerFlex .menuFull li .signUp {
-    color: #FF3998;
+    color: #ff3998;
+  }
+  body .hero .heroLeft {
+    width: 100%;
+    height: 100%;
+  }
+  body .hero .heroLeft h1 {
+    width: 620px;
+    height: 232px;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 116px;
+    margin: 0;
+  }
+  body .hero .heroLeft p {
+    width: 537px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  body .hero .alienImagePos {
+    position: relative;
+    top: 7rem;
+    left: -10rem;
+  }
+  body .hero .alienImagePos .elipse1 {
+    width: 300px;
+    height: 200px;
+    background: #ff3998;
+    -webkit-filter: blur(50px);
+            filter: blur(50px);
+    position: relative;
+    top: 12rem;
+    left: 3rem;
+  }
+  body .hero .alienImagePos .elipse2 {
+    width: 400px;
+    height: 100px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff8139), to(#ff8139)), #ff8139;
+    background: linear-gradient(0deg, #ff8139, #ff8139), #ff8139;
+    -webkit-filter: blur(80px);
+            filter: blur(80px);
+    position: relative;
+    top: 12rem;
+    left: -2rem;
+  }
+  body .hero .alienImagePos .alienImage {
+    width: 328px;
+    height: 519px;
+  }
+  body .upsell {
+    width: 100%;
+    margin-top: 182px;
+  }
+  body .press {
+    width: 100%;
+    height: auto;
+    padding: 120px 0 120px 0;
+  }
+  body .press .row1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
+    padding: 0;
+  }
+  body .press .row1 .booms {
+    display: none;
+  }
+  body .press .row1 .boom {
+    visibility: visible;
+    width: 216.12px;
+    height: 40.7px;
+    padding: 0;
+    margin: 0;
+  }
+  body .press .row1 .OpenDoor {
+    visibility: visible;
+    width: 194.76px;
+    height: 40.7px;
+  }
+  body .showcase {
+    width: 100%;
+    margin: 0;
+  }
+  body .fUpsell {
+    width: 100%;
+  }
+  body .fUpsell div {
+    width: 100%;
+  }
+  body .fUpsell div h1 {
+    width: 100%;
+  }
+  body .fUpsell div p {
+    width: 537px;
+  }
+  body .fUpsell .greenLady {
+    width: 12.875rem;
+    height: 29.1875rem;
+    position: relative;
+    left: -200px;
   }
 }
 /*# sourceMappingURL=style.css.map */

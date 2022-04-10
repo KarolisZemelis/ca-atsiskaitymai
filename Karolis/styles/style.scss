@@ -116,21 +116,25 @@ header {
     width: 11.8513rem;
     height: 17.375rem;
     left: 0.75rem;
-    top: -18.75rem;
+    top: -13.75rem;
   }
   .elipse1 {
-    width: 18.75rem;
-    height: 12.5rem;
+    width: 166.86px;
+    height: 166.86px;
+    background: #ff3998;
+    filter: blur(110.737px);
     position: relative;
-    left: -10rem;
-    top: 10rem;
+    top: 8rem;
+    left: 4rem;
   }
   .elipse2 {
-    width: 18.75rem;
-    height: 12.5rem;
+    width: 116.05px;
+    height: 116.05px;
+    background: linear-gradient(0deg, #ff8139, #ff8139), #ff8139;
+    filter: blur(110.737px);
     position: relative;
-    left: -10rem;
-    top: 2.5rem;
+    top: 4rem;
+    left: 4rem;
   }
 }
 
@@ -140,6 +144,9 @@ header {
   height: 20.375rem;
   margin-top: 5.045rem;
   background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+
   div {
     padding: 6.25rem 2rem 2rem 2rem;
 
@@ -162,16 +169,20 @@ header {
   width: 364px;
   height: 117px;
   padding: 64px 32px 56px 32px;
-  div {
+  .row1 {
     @include d-flex(center, space-between, row);
     flex: 1;
     flex-wrap: wrap;
-    .row1 {
-      padding-bottom: 27.5504px;
-    }
-    .boom {
+    padding-bottom: 27.5504px;
+
+    .booms {
       width: 208px;
       height: 40.4608px;
+    }
+    .fullScreen {
+      visibility: hidden;
+      width: 0;
+      height: 0;
     }
     .blimp {
       width: 154px;
@@ -427,16 +438,16 @@ header {
 
 @media screen and (min-width: 480px) {
   body {
-    width: 1280px;
-    padding: 70px 80px 0px 90px;
-    margin: 0 auto;
-    //delete below
-    .alienImage {
-      display: none;
+    .overflow {
+      overflow: visible;
     }
+    width: 1280px;
+    padding: 70px 80px 0px 80px;
+    margin: 0 auto;
     header {
       width: 100%;
       margin: 0%;
+      padding-bottom: 205px;
       .headerFlex {
         //removing the burger menu
         .burger {
@@ -453,11 +464,111 @@ header {
               text-decoration: none;
               color: #555555;
             }
-            .signUp{
-              color: #FF3998;
+            .signUp {
+              color: #ff3998;
             }
           }
         }
+      }
+    }
+    .hero {
+      .heroLeft {
+        width: 100%;
+        height: 100%;
+        h1 {
+          width: 620px;
+          height: 232px;
+          font-weight: 900;
+          font-size: 96px;
+          line-height: 116px;
+          margin: 0;
+        }
+        p {
+          width: 537px;
+          height: 60px;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+        }
+      }
+      .alienImagePos {
+        position: relative;
+        top: 7rem;
+        left: -10rem;
+        .elipse1 {
+          width: 300px;
+          height: 200px;
+          background: #ff3998;
+          filter: blur(50px);
+          position: relative;
+          top: 12rem;
+          left: 3rem;
+        }
+        .elipse2 {
+          width: 400px;
+          height: 100px;
+          background: linear-gradient(0deg, #ff8139, #ff8139), #ff8139;
+          filter: blur(80px);
+          position: relative;
+          top: 12rem;
+          left: -2rem;
+        }
+        .alienImage {
+          width: 328px;
+          height: 519px;
+        }
+      }
+    }
+    .upsell {
+      width: 100%;
+      margin-top: 182px;
+    }
+    .press {
+      width: 100%;
+      height: auto;
+      padding: 120px 0 120px 0;
+      .row1 {
+        @include d-flex(center, space-between, row);
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 0;
+        .booms {
+          display: none;
+        }
+        .boom {
+          visibility: visible;
+          width: 216.12px;
+          height: 40.7px;
+          padding: 0;
+          margin: 0;
+        }
+        .OpenDoor {
+          visibility: visible;
+          width: 194.76px;
+          height: 40.7px;
+        }
+      }
+    }
+    .showcase {
+      width: 100%;
+      margin: 0;
+    }
+    .fUpsell {
+      width: 100%;
+      div {
+        width: 100%;
+        h1 {
+          width: 100%;
+        }
+        p {
+          width: 537px;
+        }
+      }
+      .greenLady{
+        width: 12.875rem;
+        height: 29.1875rem;
+        position: relative;
+        left: -200px;
       }
     }
   }
