@@ -29,22 +29,26 @@ header {
   width: 22.75rem;
   height: 2.25rem;
   margin: 2rem;
-  div {
+  .headerFlex {
+    width: 100%;
     @include d-flex(center, space-between, row);
     img {
       width: 12.375rem;
       height: 2.25rem;
     }
-    nav {
+    .burger {
       width: 1.5rem;
       height: 1.375rem;
       @include d-flex(center, space-around, column);
-      div {
-        width: 1.5rem;
-        height: 0.25rem;
-        background-color: #999999;
-        border-radius: 0.1875rem;
-      }
+    }
+    .burger > div {
+      width: 1.5rem;
+      height: 0.25rem;
+      background-color: #999999;
+      border-radius: 0.1875rem;
+    }
+    .menuFull {
+      display: none;
     }
   }
 }
@@ -369,13 +373,6 @@ header {
     position: relative;
     top: 67px;
     left: -42px;
-    // width: 206px;
-    // height: 467px;
-    // position: relative;
-    // width: 11.8513rem;
-    // height: 17.375rem;
-    // left: -2em;
-    // top: 20rem;
   }
 }
 
@@ -419,7 +416,7 @@ header {
       }
     }
     .copyright {
-      width:268px;
+      width: 268px;
       font-weight: 400;
       font-size: 17px;
       line-height: 100%;
@@ -428,14 +425,40 @@ header {
   }
 }
 
-// @media screen and (min-width: 480px){
-// body{
-// width: auto;
-// margin-left: 600px;
-// margin-right: 600px;
-// padding:70px 80px 0px 90px ;
-// .cardBox{
-//  @include d-flex(center,center,row );
-// }
-// }
-// }
+@media screen and (min-width: 480px) {
+  body {
+    width: 1280px;
+    padding: 70px 80px 0px 90px;
+    margin: 0 auto;
+    //delete below
+    .alienImage {
+      display: none;
+    }
+    header {
+      width: 100%;
+      margin: 0%;
+      .headerFlex {
+        //removing the burger menu
+        .burger {
+          display: none;
+        }
+        width: 100%;
+        @include d-flex(center, space-between, row);
+        .menuFull {
+          @include d-flex(center, flex-end, row);
+          list-style: none;
+          gap: 1.75rem;
+          li {
+            a {
+              text-decoration: none;
+              color: #555555;
+            }
+            .signUp{
+              color: #FF3998;
+            }
+          }
+        }
+      }
+    }
+  }
+}
