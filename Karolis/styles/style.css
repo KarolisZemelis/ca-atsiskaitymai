@@ -543,7 +543,7 @@ header .headerFlex .menuFull {
 }
 
 .footer .container {
-  padding: 0 163px 105px 32px;
+  padding: 0 163px 64px 32px;
   margin: 0;
 }
 
@@ -609,10 +609,23 @@ header .headerFlex .menuFull {
   color: #555555;
 }
 
-.footer .container .copyright {
+.footer .copyright {
+  padding-left: 32px;
+  padding-bottom: 105px;
   width: 268px;
   font-weight: 400;
   font-size: 17px;
+  line-height: 100%;
+  color: #999999;
+}
+
+.footer .launching {
+  visibility: hidden;
+  padding-bottom: 105px;
+  width: 225px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 100%;
   color: #999999;
 }
@@ -787,6 +800,60 @@ header .headerFlex .menuFull {
     height: 29.1875rem;
     position: relative;
     left: -200px;
+  }
+  body .footer {
+    width: 100%;
+  }
+  body .footer .container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .footer .container .footerLinksContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 75px;
+  }
+  body .footer .copyRightFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .footer .copyRightFooter .launching {
+    visibility: visible;
   }
 }
 /*# sourceMappingURL=style.css.map */

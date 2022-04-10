@@ -390,7 +390,7 @@ header {
 //FOOTER
 .footer {
   .container {
-    padding: 0 163px 105px 32px;
+    padding: 0 163px 64px 32px;
     margin: 0;
     p {
       font-weight: 400;
@@ -426,13 +426,25 @@ header {
         }
       }
     }
-    .copyright {
-      width: 268px;
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 100%;
-      color: #999999;
-    }
+  }
+  .copyright {
+    padding-left: 32px;
+    padding-bottom: 105px;
+    width: 268px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 100%;
+    color: #999999;
+  }
+  .launching {
+    visibility: hidden;
+    padding-bottom: 105px;  
+    width: 225px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #999999;
   }
 }
 
@@ -564,11 +576,29 @@ header {
           width: 537px;
         }
       }
-      .greenLady{
+      .greenLady {
         width: 12.875rem;
         height: 29.1875rem;
         position: relative;
         left: -200px;
+      }
+    }
+    .footer {
+      width: 100%;
+      .container {
+        width: 100%;
+        @include d-flex(center, center, row);
+        .footerLinksContainer {
+          width: 100%;
+          @include d-flex(flex-start, center, row);
+          gap: 75px;
+        }
+      }
+      .copyRightFooter {
+        @include d-flex(center, space-between, row);
+        .launching {
+          visibility: visible;
+        }
       }
     }
   }
