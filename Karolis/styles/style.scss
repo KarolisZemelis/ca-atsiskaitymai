@@ -6,7 +6,7 @@
 
 body {
   width: 26.75rem;
-  height: auto;
+  // height: auto;
   background-color: #ffffff;
   margin: 0 auto;
   font-family: "Inter";
@@ -23,362 +23,370 @@ body {
 
 $font: "Inter";
 
-  //HEADER
-  //NAVBAR
-  header {
-    width: 22.75rem;
-    height: 2.25rem;
-    margin: 2rem;
-    div {
-      @include d-flex(center, space-between, row);
-      img {
-        width: 12.375rem;
-        height: 2.25rem;
-      }
-      nav {
+//HEADER
+//NAVBAR
+header {
+  width: 22.75rem;
+  height: 2.25rem;
+  margin: 2rem;
+  div {
+    @include d-flex(center, space-between, row);
+    img {
+      width: 12.375rem;
+      height: 2.25rem;
+    }
+    nav {
+      width: 1.5rem;
+      height: 1.375rem;
+      @include d-flex(center, space-around, column);
+      div {
         width: 1.5rem;
-        height: 1.375rem;
-        @include d-flex(center, space-around, column);
-        div {
-          width: 1.5rem;
-          height: 0.25rem;
-          background-color: #999999;
-          border-radius: 0.1875rem;
-        }
+        height: 0.25rem;
+        background-color: #999999;
+        border-radius: 0.1875rem;
       }
     }
   }
+}
 
-  //HERO
-  //LEFT TEXT
+//HERO
+//LEFT TEXT
+//RIGHT IMAGE
+.hero {
+  width: 100%;
+  height: 28rem;
+  margin-left: 2rem;
+  @include d-flex(center, space-between, row);
+  div {
+    padding-left: 0;
+    h4 {
+      width: 10.6rem;
+      height: 1.1875rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1.21rem;
+      letter-spacing: 0.1em;
+      color: #ff3998;
+    }
+    h1 {
+      width: 17.125rem;
+      height: 7.25rem;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 3rem;
+      line-height: 3.6306rem;
+      color: #111111;
+    }
+    p {
+      width: 17.125rem;
+      height: 7.5rem;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 150%;
+      color: #555555;
+    }
+    .SignUpBtn {
+      width: 11.75rem;
+      height: 4.6875rem;
+      border-radius: 64px;
+      background-image: url(/ca-atsiskaitymai/Karolis/images/SignUpBorder.jpg);
+      @include d-flex(center, center, row);
+      a {
+        width: 4.75rem;
+        height: 1.875rem;
+        text-decoration: none;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 150%;
+        color: #111111;
+      }
+    }
+  }
   //RIGHT IMAGE
-  .hero {
-    width: 100%;
-    height: 28rem;
-    margin-left: 2rem;
+  .alienImage {
+    width: 10.9806rem;
+    height: 17.375rem;
+    position: relative;
+    width: 11.8513rem;
+    height: 17.375rem;
+    left: 0.75rem;
+    top: -18.75rem;
+  }
+  .elipse1 {
+    width: 18.75rem;
+    height: 12.5rem;
+    position: relative;
+    left: -10rem;
+    top: 10rem;
+  }
+  .elipse2 {
+    width: 18.75rem;
+    height: 12.5rem;
+    position: relative;
+    left: -10rem;
+    top: 2.5rem;
+  }
+}
+
+//UPSELL
+.upsell {
+  width: 26.75rem;
+  height: 20.375rem;
+  margin-top: 5.045rem;
+  background-image: url(images/background.png);
+  div {
+    padding: 6.25rem 2rem 2rem 2rem;
+
+    h1 {
+      font-weight: 500;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin: 0;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 150%;
+    }
+  }
+}
+
+//PRESS
+.press {
+  width: 364px;
+  height: 117px;
+  padding: 64px 32px 56px 32px;
+  div {
     @include d-flex(center, space-between, row);
-    div {
-      padding-left: 0;
-      h4 {
-        width: 10.6rem;
-        height: 1.1875rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        line-height: 1.21rem;
-        letter-spacing: 0.1em;
-        color: #ff3998;
-      }
-      h1 {
-        width: 17.125rem;
-        height: 7.25rem;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 3rem;
-        line-height: 3.6306rem;
-        color: #111111;
-      }
-      p {
-        width: 17.125rem;
-        height: 7.5rem;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.25rem;
-        line-height: 150%;
-        color: #555555;
-      }
-      .SignUpBtn {
-        width: 11.75rem;
-        height: 4.6875rem;
-        border-radius: 64px;
-        background-image: url(/ca-atsiskaitymai/Karolis/images/SignUpBorder.jpg);
-        @include d-flex(center, center, row);
-        a {
-          width: 4.75rem;
-          height: 1.875rem;
-          text-decoration: none;
-          font-family: inherit;
-          font-weight: 600;
-          font-size: 1.25rem;
-          line-height: 150%;
-          color: #111111;
-        }
-      }
+    flex: 1;
+    flex-wrap: wrap;
+    .row1 {
+      padding-bottom: 27.5504px;
     }
-    //RIGHT IMAGE
-    .alienImage {
-      width: 10.9806rem;
-      height: 17.375rem;
-      position: relative;
-      width: 11.8513rem;
-      height: 17.375rem;
-      left: 0.75rem;
-      top: -18.75rem;
+    .boom {
+      width: 208px;
+      height: 40.4608px;
     }
-    .elipse1 {
-      width: 18.75rem;
-      height: 12.5rem;
-      position: relative;
-      left: -10rem;
-      top: 10rem;
+    .blimp {
+      width: 154px;
+      height: 46.1904px;
     }
-    .elipse2 {
-      width: 18.75rem;
-      height: 12.5rem;
-      position: relative;
-      left: -10rem;
-      top: 2.5rem;
+    .qrco {
+      width: 132.72px;
+      height: 45.9504px;
+    }
+    .drop {
+      width: 156.12px;
+      height: 40.4704px;
     }
   }
+}
 
-  //UPSELL
-  .upsell {
-    width: 26.75rem;
-    height: 20.375rem;
-    margin-top: 5.045rem;
-    background-image: url(images/background.png);
-    div {
-      padding: 6.25rem 2rem 2rem 2rem;
-
-      h1 {
-        font-weight: 500;
-        font-size: 2.5rem;
-        line-height: 3rem;
-        margin: 0;
-      }
-      p {
-        font-weight: 400;
-        font-size: 1.25rem;
-        line-height: 150%;
-      }
+//SHOWCASE
+.showcase {
+  width: 22.75rem;
+  margin: 0rem 2rem 0rem 2rem;
+  .showcaseText {
+    width: 100%;
+    height: 100%;
+    h1 {
+      font-weight: 500;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin: 0;
+      padding-bottom: 1rem;
     }
-  }
-
-  //PRESS
-  .press {
-    width: 364px;
-    height: 117px;
-    padding: 64px 32px 56px 32px;
-    div {
-      @include d-flex(center, space-between, row);
-      flex: 1;
-      flex-wrap: wrap;
-      .row1 {
-        padding-bottom: 27.5504px;
-      }
-      .boom {
-        width: 208px;
-        height: 40.4608px;
-      }
-      .blimp {
-        width: 154px;
-        height: 46.1904px;
-      }
-      .qrco {
-        width: 132.72px;
-        height: 45.9504px;
-      }
-      .drop {
-        width: 156.12px;
-        height: 40.4704px;
-      }
+    p {
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 150%;
+      color: #555555;
+      text-align: justify;
+      margin: 0;
+      padding-bottom: 2.5rem;
     }
-  }
 
-  //SHOWCASE
-  .showcase {
-    width: 22.75rem;
-    margin: 0rem 2rem 0rem 2rem;
-    .showcaseText {
-      width: 100%;
-      height: 100%;
-      h1 {
-        font-weight: 500;
-        font-size: 2.5rem;
-        line-height: 3rem;
-        margin: 0;
-        padding-bottom: 1rem;
-      }
-      p {
-        font-weight: 400;
-        font-size: 1.25rem;
-        line-height: 150%;
-        color: #555555;
-        text-align: justify;
-        margin: 0;
-        padding-bottom: 2.5rem;
-      }
-
-      span {
+    span {
+      color: inherit;
+      a {
         color: inherit;
-        a {
-          color: inherit;
-        }
       }
     }
-    .cardBox {
-      @include d-flex(flex-end, flex-start, row);
-      gap: 2.5rem;
-      .card {
+  }
+  .cardBox {
+    @include d-flex(flex-end, flex-start, row);
+    gap: 2.5rem;
+    padding-bottom: 5.75rem;
+    .card {
+      width: 18.125rem;
+      height: 25rem;
+      background-color: #eeeeee;
+      border-radius: 1rem;
+      // margin: 40px 20px 92px 32px;
+
+      .imgcard {
         width: 18.125rem;
-        height: 25rem;
-        background-color: #eeeeee;
-        border-radius: 1rem;
-        // margin: 40px 20px 92px 32px;
+        height: 17.375rem;
+      }
+      .cardTable {
+        @include d-flex(center, space-between, row);
+        padding: 1.5rem 1.4375rem 1.5rem 1.5rem;
 
-        .imgcard {
-          width: 18.125rem;
-          height: 17.375rem;
+        .cardTableLeft {
+          @include d-flex(flex-start, center, column);
+          gap: 0.75rem;
+          .tier1Left {
+            width: 5.375rem;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #ff8139;
+          }
+          .name {
+            width: 6.8125rem;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 100%;
+            color: #111111;
+          }
+          .nftNr {
+            width: 4.0625rem;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            color: #777777;
+          }
         }
-        .cardTable {
-          @include d-flex(center, space-between, row);
-          padding: 1.5rem 1.4375rem 1.5rem 1.5rem;
-
-          .cardTableLeft {
-            @include d-flex(flex-start, center, column);
-            gap: 0.75rem;
-            .tier1Left {
-              width: 5.375rem;
-              font-weight: 500;
-              font-size: 0.75rem;
-              line-height: 100%;
-              text-transform: uppercase;
-              color: #ff8139;
-            }
-            .name {
-              width: 6.8125rem;
-              font-weight: 500;
-              font-size: 20px;
-              line-height: 100%;
-              color: #111111;
-            }
-            .nftNr {
-              width: 4.0625rem;
-              font-weight: 400;
-              font-size: 18px;
-              line-height: 100%;
-              color: #777777;
+        .cardTableRight {
+          @include d-flex(flex-end, center, column);
+          gap: 0.75rem;
+          .tier1Right {
+            width: 3rem;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 100%;
+            color: #777777;
+          }
+          .price {
+            width: 100px;
+            font-weight: 500;
+            font-size: 1.1875rem;
+            line-height: 100%;
+            color: #111111;
+            .ethLogo {
+              width: 0.8125rem;
+              height: 1.375rem;
             }
           }
-          .cardTableRight {
-            @include d-flex(flex-end, center, column);
-            gap: 0.75rem;
-            .tier1Right {
-              width: 3rem;
-              font-weight: 500;
-              font-size: 0.75rem;
-              line-height: 100%;
-              color: #777777;
-            }
-            .price {
-              width: 100px;
-              font-weight: 500;
-              font-size: 1.1875rem;
-              line-height: 100%;
-              color: #111111;
-              .ethLogo {
-                width: 0.8125rem;
-                height: 1.375rem;
-              }
-            }
-            .timeLeft {
-              width: 4.875rem;
-              font-weight: 400;
-              font-size: 1.125rem;
-              line-height: 100%;
-              color: #777777;
-            }
+          .timeLeft {
+            width: 4.875rem;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 100%;
+            color: #777777;
           }
         }
       }
     }
   }
+}
 
-  .fUpsell {
-    width: 100%;
-    height: 28rem;
-    margin-left: 2rem;
-    @include d-flex(center, space-between, row);
-    div {
-      padding-left: 0;
-      h4 {
-        width: 10.6rem;
-        height: 1.1875rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        line-height: 1.21rem;
-        letter-spacing: 0.1em;
-        color: #ff3998;
-      }
-      h1 {
-        width: 17.125rem;
-        height: 7.25rem;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 3rem;
-        line-height: 3.6306rem;
-        color: #111111;
-      }
-      p {
-        width: 17.125rem;
-        height: 7.5rem;
-        font-style: normal;
-        font-weight: 400;
+//DIVIDER
+.divider {
+  width: 100%;
+  height: 0.125rem;
+  background-color: #eeeeee;
+  margin-bottom: 4rem;
+}
+//FOOTER UPSELL
+.fUpsell {
+  @include d-flex(center, center, row);
+  width: 100%;
+  height: 28rem;
+  margin-left: 2rem;
+  padding-bottom: 75px;
+  div {
+    padding-left: 0;
+    h4 {
+      width: 10.6rem;
+      height: auto;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1.21rem;
+      letter-spacing: 0.1em;
+      color: #ff3998;
+      padding-top: 64px;
+      padding-bottom: 24px;
+      margin: 0;
+    }
+    h1 {
+      width: 274px;
+      height: auto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 56px;
+      line-height: 3.6306rem;
+      color: #111111;
+      margin: 0;
+      padding-bottom: 24px;
+    }
+    p {
+      width: 207px;
+      height: auto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      color: #555555;
+      margin: 0;
+      padding-bottom: 24px;
+    }
+    .SignUpBtn {
+      width: 11.75rem;
+      height: 4.6875rem;
+      border-radius: 64px;
+      background-image: url(/ca-atsiskaitymai/Karolis/images/SignUpBorder.jpg);
+      @include d-flex(center, center, row);
+      a {
+        width: 4.75rem;
+        height: 1.875rem;
+        text-decoration: none;
+        font-family: inherit;
+        font-weight: 600;
         font-size: 1.25rem;
         line-height: 150%;
-        color: #555555;
+        color: #111111;
       }
-      .SignUpBtn {
-        width: 11.75rem;
-        height: 4.6875rem;
-        border-radius: 64px;
-        background-image: url(/ca-atsiskaitymai/Karolis/images/SignUpBorder.jpg);
-        @include d-flex(center, center, row);
-        a {
-          width: 4.75rem;
-          height: 1.875rem;
-          text-decoration: none;
-          font-family: inherit;
-          font-weight: 600;
-          font-size: 1.25rem;
-          line-height: 150%;
-          color: #111111;
-        }
-      }
-    }
-    //RIGHT IMAGE
-    .alienImage {
-      width: 10.9806rem;
-      height: 17.375rem;
-      position: relative;
-      width: 11.8513rem;
-      height: 17.375rem;
-      left: 0.75rem;
-      top: -18.75rem;
-    }
-    .elipse1 {
-      width: 18.75rem;
-      height: 12.5rem;
-      position: relative;
-      left: -10rem;
-      top: 10rem;
-    }
-    .elipse2 {
-      width: 18.75rem;
-      height: 12.5rem;
-      position: relative;
-      left: -10rem;
-      top: 2.5rem;
     }
   }
+  //RIGHT IMAGE
+  .greenLady {
+    width: 206px;
+    height: 467px;
+    position: relative;
+    top: 67px;
+    left: -43px;
+    // width: 206px;
+    // height: 467px;
+    // position: relative;
+    // width: 11.8513rem;
+    // height: 17.375rem;
+    // left: -2em;
+    // top: 20rem;
+  }
+}
 
 // @media screen and (min-width: 480px){
-//   body{
-//     width: auto;
-//     margin-left: 600px;
-//     margin-right: 600px;
-//     padding:70px 80px 0px 90px ;
-//     .cardBox{
-//       @include d-flex(center,center,row );
-//     }
-//   }
+// body{
+// width: auto;
+// margin-left: 600px;
+// margin-right: 600px;
+// padding:70px 80px 0px 90px ;
+// .cardBox{
+//  @include d-flex(center,center,row );
+// }
+// }
 // }

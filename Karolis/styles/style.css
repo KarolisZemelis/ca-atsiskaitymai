@@ -4,7 +4,6 @@
 
 body {
   width: 26.75rem;
-  height: auto;
   background-color: #ffffff;
   margin: 0 auto;
   font-family: "Inter";
@@ -298,6 +297,7 @@ header div nav div {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 2.5rem;
+  padding-bottom: 5.75rem;
 }
 
 .showcase .cardBox .card {
@@ -417,23 +417,31 @@ header div nav div {
   color: #777777;
 }
 
-.fUpsell {
+.divider {
   width: 100%;
-  height: 28rem;
-  margin-left: 2rem;
+  height: 0.125rem;
+  background-color: #eeeeee;
+  margin-bottom: 4rem;
+}
+
+.fUpsell {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 100%;
+  height: 28rem;
+  margin-left: 2rem;
+  padding-bottom: 75px;
 }
 
 .fUpsell div {
@@ -442,32 +450,39 @@ header div nav div {
 
 .fUpsell div h4 {
   width: 10.6rem;
-  height: 1.1875rem;
+  height: auto;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.21rem;
   letter-spacing: 0.1em;
   color: #ff3998;
+  padding-top: 64px;
+  padding-bottom: 24px;
+  margin: 0;
 }
 
 .fUpsell div h1 {
-  width: 17.125rem;
-  height: 7.25rem;
+  width: 274px;
+  height: auto;
   font-style: normal;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 56px;
   line-height: 3.6306rem;
   color: #111111;
+  margin: 0;
+  padding-bottom: 24px;
 }
 
 .fUpsell div p {
-  width: 17.125rem;
-  height: 7.5rem;
+  width: 207px;
+  height: auto;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 150%;
   color: #555555;
+  margin: 0;
+  padding-bottom: 24px;
 }
 
 .fUpsell div .SignUpBtn {
@@ -501,29 +516,11 @@ header div nav div {
   color: #111111;
 }
 
-.fUpsell .alienImage {
-  width: 10.9806rem;
-  height: 17.375rem;
+.fUpsell .greenLady {
+  width: 206px;
+  height: 467px;
   position: relative;
-  width: 11.8513rem;
-  height: 17.375rem;
-  left: 0.75rem;
-  top: -18.75rem;
-}
-
-.fUpsell .elipse1 {
-  width: 18.75rem;
-  height: 12.5rem;
-  position: relative;
-  left: -10rem;
-  top: 10rem;
-}
-
-.fUpsell .elipse2 {
-  width: 18.75rem;
-  height: 12.5rem;
-  position: relative;
-  left: -10rem;
-  top: 2.5rem;
+  top: 67px;
+  left: -43px;
 }
 /*# sourceMappingURL=style.css.map */
