@@ -189,7 +189,7 @@ header .headerFlex .menuFull {
   margin-top: 5.045rem;
   background-image: url(images/background.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-position: 82%;
 }
 
 .upsell div {
