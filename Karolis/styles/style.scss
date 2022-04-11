@@ -10,8 +10,6 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
   font-family: "Inter";
-  //Delete below
-  border: solid 0.125rem orange;
 }
 
 @mixin d-flex($align, $justify, $direction) {
@@ -140,13 +138,12 @@ header {
 
 //UPSELL
 .upsell {
-  width: 26.75rem;
+  width: 100%;
   height: 20.375rem;
   margin-top: 5.045rem;
   background-image: url(images/background.png);
   background-repeat: no-repeat;
   background-size: auto;
-
   div {
     padding: 6.25rem 2rem 2rem 2rem;
 
@@ -239,7 +236,6 @@ header {
       height: 25rem;
       background-color: #eeeeee;
       border-radius: 1rem;
-      // margin: 40px 20px 92px 32px;
 
       .imgcard {
         width: 18.125rem;
@@ -306,6 +302,12 @@ header {
         }
       }
     }
+  }
+  //HIDE NON SLIDE CARDBOX
+  .sliderContainer{
+    visibility: hidden;
+    width: 0;
+    height: 0;
   }
 }
 
@@ -387,6 +389,22 @@ header {
   }
 }
 
+.slider {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+}
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
 //FOOTER
 .footer {
   .container {
@@ -438,7 +456,7 @@ header {
   }
   .launching {
     visibility: hidden;
-    padding-bottom: 105px;  
+    padding-bottom: 105px;
     width: 225px;
     height: 20px;
     font-weight: 400;
@@ -446,6 +464,30 @@ header {
     line-height: 100%;
     color: #999999;
   }
+}
+
+//SLIDER
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.slider {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+}
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
 @media screen and (min-width: 480px) {
@@ -564,6 +606,19 @@ header {
     .showcase {
       width: 100%;
       margin: 0;
+      .sliderContainer{
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+      .slides {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+      }
+    }
     }
     .fUpsell {
       width: 100%;
