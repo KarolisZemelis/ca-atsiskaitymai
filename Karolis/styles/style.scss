@@ -91,7 +91,7 @@ header {
     .SignUpBtn {
       width: 11.75rem;
       height: 4.6875rem;
-      border-radius: 64px;
+      border-radius: 4rem;
       background-image: url(/ca-atsiskaitymai/Karolis/images/SignUpBorder.jpg);
       @include d-flex(center, center, row);
       a {
@@ -117,19 +117,19 @@ header {
     top: -13.75rem;
   }
   .elipse1 {
-    width: 166.86px;
-    height: 166.86px;
+    width: 10.4288rem;
+    height: 10.4288rem;
     background: #ff3998;
-    filter: blur(110.737px);
+    filter: blur(6.9211rem);
     position: relative;
     top: 8rem;
     left: 4rem;
   }
   .elipse2 {
-    width: 116.05px;
-    height: 116.05px;
+    width: 7.2531rem;
+    height: 7.2531rem;
     background: linear-gradient(0deg, #ff8139, #ff8139), #ff8139;
-    filter: blur(110.737px);
+    filter: blur(6.9211rem);
     position: relative;
     top: 4rem;
     left: 4rem;
@@ -163,18 +163,18 @@ header {
 
 //PRESS
 .press {
-  width: 364px;
-  height: 117px;
-  padding: 64px 32px 56px 32px;
+  width: 22.75rem;
+  height: 7.3125rem;
+  padding: 4rem 2rem 3.5rem 2rem;
   .row1 {
     @include d-flex(center, space-between, row);
     flex: 1;
     flex-wrap: wrap;
-    padding-bottom: 27.5504px;
+    padding-bottom: 1.7219rem;
 
     .booms {
-      width: 208px;
-      height: 40.4608px;
+      width: 13rem;
+      height: 2.5288rem;
     }
     .fullScreen {
       visibility: hidden;
@@ -182,16 +182,16 @@ header {
       height: 0;
     }
     .blimp {
-      width: 154px;
-      height: 46.1904px;
+      width: 9.625rem;
+      height: 2.8869rem;
     }
     .qrco {
-      width: 132.72px;
-      height: 45.9504px;
+      width: 8.295rem;
+      height: 2.8719rem;
     }
     .drop {
-      width: 156.12px;
-      height: 40.4704px;
+      width: 9.7575rem;
+      height: 2.5294rem;
     }
   }
 }
@@ -324,7 +324,7 @@ header {
   width: 100%;
   height: 28rem;
   margin-left: 2rem;
-  padding-bottom: 75px;
+  padding-bottom: 4.6875rem;
   div {
     padding-left: 0;
     h4 {
@@ -335,8 +335,8 @@ header {
       line-height: 1.21rem;
       letter-spacing: 0.1em;
       color: #ff3998;
-      padding-top: 64px;
-      padding-bottom: 24px;
+      padding-top: 4rem;
+      padding-bottom: 1.5rem;
       margin: 0;
     }
     h1 {
@@ -344,27 +344,27 @@ header {
       height: auto;
       font-style: normal;
       font-weight: 900;
-      font-size: 56px;
+      font-size: 3.5rem;
       line-height: 3.6306rem;
       color: #111111;
       margin: 0;
-      padding-bottom: 24px;
+      padding-bottom: 1.5rem;
     }
     p {
-      width: 207px;
+      width: 12.9375rem;
       height: auto;
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 150%;
       color: #555555;
       margin: 0;
-      padding-bottom: 24px;
+      padding-bottom: 1.5rem;
     }
     .SignUpBtn {
       width: 11.75rem;
       height: 4.6875rem;
-      border-radius: 64px;
+      border-radius: 4rem;
       background-image: url(/ca-atsiskaitymai/Karolis/images/SignUpBorder.jpg);
       @include d-flex(center, center, row);
       a {
@@ -381,21 +381,21 @@ header {
   }
   //RIGHT IMAGE
   .greenLady {
-    width: 206px;
-    height: 467px;
+    width: 12.875rem;
+    height: 29.1875rem;
     position: relative;
-    top: 67px;
-    left: -42px;
+    top: 4.1875rem;
+    left: -2.625rem;
   }
 }
 
 .slider {
   width: 100%;
-  max-width: 600px;
-  height: 400px;
-  margin: 20px;
+  max-width: 37.5rem;
+  height: 25rem;
+  margin: 1.25rem;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   position: relative;
 }
 .slides {
@@ -408,34 +408,34 @@ header {
 //FOOTER
 .footer {
   .container {
-    padding: 0 163px 64px 32px;
+    padding: 0 10.1875rem 4rem 2rem;
     margin: 0;
     p {
       font-weight: 400;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 100%;
     }
     .SocialMedia {
       @include d-flex(center, space-between, row);
-      width: 118px;
+      width: 7.375rem;
     }
     .footerLinksContainer {
       .footerLinks {
         @include d-flex(flex-start, space-between, row);
-        width: 260px;
+        width: 16.25rem;
 
         ul {
           list-style: none;
           padding: 0;
           div {
             font-weight: 700;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: 1rem;
+            line-height: 1.1875rem;
             letter-spacing: 0.1em;
-            padding-bottom: 28px;
+            padding-bottom: 1.75rem;
           }
           li {
-            padding-bottom: 8px;
+            padding-bottom: .5rem;
             a {
               text-decoration: none;
               color: #555555;
@@ -446,21 +446,21 @@ header {
     }
   }
   .copyright {
-    padding-left: 32px;
-    padding-bottom: 105px;
-    width: 268px;
+    padding-left: 2rem;
+    padding-bottom: 6.5625rem;
+    width: 16.75rem;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1.0625rem;
     line-height: 100%;
     color: #999999;
   }
   .launching {
     visibility: hidden;
-    padding-bottom: 105px;
-    width: 225px;
-    height: 20px;
+    padding-bottom: 6.5625rem;
+    width: 14.0625rem;
+    height: 1.25rem;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 100%;
     color: #999999;
   }
@@ -475,11 +475,11 @@ header {
 }
 .slider {
   width: 100%;
-  max-width: 600px;
-  height: 400px;
-  margin: 20px;
+  max-width: 37.5rem;
+  height: 25rem;
+  margin: 1.25rem;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   position: relative;
 }
 .slides {
@@ -490,18 +490,17 @@ header {
   scroll-snap-type: x mandatory;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 30rem) {
   body {
     .overflow {
       overflow: visible;
     }
-    width: 1280px;
-    padding: 70px 80px 0px 80px;
+    width: 80rem;
+    padding: 4.375rem 5rem 0rem 5rem;
     margin: 0 auto;
     header {
       width: 100%;
-      margin: 0%;
-      padding-bottom: 205px;
+      padding-bottom: 12.8125rem;
       .headerFlex {
         //removing the burger menu
         .burger {
@@ -531,17 +530,17 @@ header {
         height: 100%;
         h1 {
           width: 620px;
-          height: 232px;
+          height: 14.5rem;
           font-weight: 900;
-          font-size: 96px;
-          line-height: 116px;
+          font-size: 6rem;
+          line-height: 7.25rem;
           margin: 0;
         }
         p {
-          width: 537px;
-          height: 60px;
+          width: 33.5625rem;
+          height: 3.75rem;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 1.25rem;
           line-height: 150%;
         }
       }
@@ -550,37 +549,37 @@ header {
         top: 7rem;
         left: -10rem;
         .elipse1 {
-          width: 300px;
-          height: 200px;
+          width: 18.75rem;
+          height: 12.5rem;
           background: #ff3998;
-          filter: blur(50px);
+          filter: blur(3.125rem);
           position: relative;
           top: 12rem;
           left: 3rem;
         }
         .elipse2 {
-          width: 400px;
-          height: 100px;
+          width: 25rem;
+          height: 6.25rem;
           background: linear-gradient(0deg, #ff8139, #ff8139), #ff8139;
-          filter: blur(80px);
+          filter: blur(5rem);
           position: relative;
           top: 12rem;
           left: -2rem;
         }
         .alienImage {
-          width: 328px;
-          height: 519px;
+          width: 20.5rem;
+          height: 32.4375rem;
         }
       }
     }
     .upsell {
       width: 100%;
-      margin-top: 182px;
+      margin-top: 11.375rem;
     }
     .press {
       width: 100%;
       height: auto;
-      padding: 120px 0 120px 0;
+      padding: 7.5rem 0 7.5rem 0;
       .row1 {
         @include d-flex(center, space-between, row);
         flex-wrap: nowrap;
@@ -591,15 +590,15 @@ header {
         }
         .boom {
           visibility: visible;
-          width: 216.12px;
-          height: 40.7px;
+          width: 13.5075rem;
+          height: 2.5438rem;
           padding: 0;
           margin: 0;
         }
         .OpenDoor {
           visibility: visible;
-          width: 194.76px;
-          height: 40.7px;
+          width: 12.1725rem;
+          height: 2.5438rem;
         }
       }
     }
@@ -628,14 +627,14 @@ header {
           width: 100%;
         }
         p {
-          width: 537px;
+          width: 33.5625rem;
         }
       }
       .greenLady {
         width: 12.875rem;
         height: 29.1875rem;
         position: relative;
-        left: -200px;
+        left: -12.5rem;
       }
     }
     .footer {
@@ -646,7 +645,7 @@ header {
         .footerLinksContainer {
           width: 100%;
           @include d-flex(flex-start, center, row);
-          gap: 75px;
+          gap: 4.6875rem;
         }
       }
       .copyRightFooter {
